@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music play</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="music-bloc" id="music-bloc">
+        <img 
+        class="cover"
+        id="cover"
+        width="400px"
+        height="400px"
+        src="./images/Miyagi-Minor.jpg" alt="Andy panda va Miyagi">
+        <h2 id="text">Miyagi-Minor</h2>
+
+        <audio src="./music/Miyagi-Minor.mp3" id="audio"></audio>
+
+        <div class="nexted-bloc"  id="nexted">
+            <div class="nexted-child" id="nexted-child"></div>
+        </div>
+       
+        <div class="buttons">
+            <button id="back"><i class="fa-solid fa-backward-step"></i></button>
+            <button id="play"><i class="fa-solid fa-play"></i></button>
+            <button id="next"><i class="fa-solid fa-forward-step"></i></button>
+        </div>
+        <div class="volume">
+            <input id="volume" type="range" min="0" step="1" max="100">
+            <span id="volume-value">100</span>
+        </div>
+    </div>
+
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
